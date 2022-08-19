@@ -14,8 +14,8 @@ const calculateBill = () => {
     let perPerson = (bill+((tip/100)*bill))/numberOfPeople
     console.log("$" + typeof perPerson)
     
-    // getBill.value = bill.toPrecision(3)
-    document.getElementById("perPersonTotal").innerText = "$" + perPerson.toPrecision(3)
+    // getBill.value = bill.toFixed(2)
+    document.getElementById("perPersonTotal").innerText = `$${perPerson.toLocaleString('en-US')}`
 }
 
 
